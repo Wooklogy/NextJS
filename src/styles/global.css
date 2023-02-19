@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #ffb45b;
+    --color-hover: #2dd8b2;
+    --color-active: #ff00ff;
+    --color-link: #0000ff;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라 신버전 */
+    -ms-text-size-adjust: none; /* IE */
+    -moz-text-size-adjust: none; /* 파이어폭스 */
+    -o-text-size-adjust: none; /* 오페라 구버전 */
+}
+* {
+    box-sizing: border-box;
+}
+/* rem */
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 728px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
